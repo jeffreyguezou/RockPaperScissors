@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <script>
+        let computerWins=0;
+        let playerWins=0;
+        function getComputerChoice()
+        {
+            const availableChoices =["rock","paper","scissors"];
+            let computerChoice=availableChoices[Math.floor(Math.random()*availableChoices.length)];
+            return computerChoice;
+        }
+        function getPlayerChoice()
+        {
+            let playerChoice= prompt("Enter your choice 1 for rock, 2 for paper or 3 for scissors?");
+            if(playerChoice==1)
+            {
+                playerChoice="rock";
+            }
+            else if(playerChoice==2)
+            {
+                playerChoice="paper";
+            }
+            else if(playerChoice==3)
+            {
+                playerChoice="scissors";
+            }
+            return playerChoice;
+        }
+        function game()
+        {
+            
+            let playerChoice= getPlayerChoice();
+            let computerChoice=getComputerChoice();
+            if(playerChoice==computerChoice){
+                console.log(`It is a tie. Both chose ${playerChoice}`);
+            }
+            if(playerChoice=="rock")
+            {
+
+                if(computerChoice=="paper")
+                {
+                    console.log("computer wins");
+                    console.log(`You chose ${playerChoice} `);
+                    console.log(`Computer chose ${computerChoice}`);
+                    computerWins++;
+                }
+                if(computerChoice=="scissors")
+                {
+                    console.log("Player Wins")
+                    console.log(`You chose ${playerChoice} `);
+                    console.log(`Computer chose ${computerChoice}`);
+                    playerWins++;
+                }
+            }
+            if(playerChoice=="paper")
+            {
+
+                if(computerChoice=="rock")
+                {
+                    console.log("Player wins")
+                    console.log(`You chose ${playerChoice} `);
+                    console.log(`Computer chose ${computerChoice}`);
+                    playerWins++;
+                }
+                if(computerChoice=="scissors")
+                {
+                    console.log("Computer Wins")
+                    console.log(`You chose ${playerChoice} `);
+                    console.log(`Computer chose ${computerChoice}`);
+                    computerWins++;
+                }
+            }
+            if(playerChoice=="scissors")
+            {
+
+                if(computerChoice=="rock")
+                {
+                    console.log("Computer wins")
+                    console.log(`You chose ${playerChoice} `);
+                    console.log(`Computer chose ${computerChoice}`);
+                    computerWins++;
+                }
+                if(computerChoice=="paper")
+                {
+                    console.log("Player Wins")
+                    console.log(`You chose ${playerChoice} `);
+                    console.log(`Computer chose ${computerChoice}`);
+                    playerWins++;
+                }
+            }
+            
+        }
+        function gameSeries()
+        {
+          do
+            {
+                game();
+                console.log(`Computer : ${computerWins}`);
+                console.log(`Player : ${playerWins}`);
+            }while(computerWins<5 && playerWins<5)
+            if(computerWins==5)
+            {
+                console.log("COMPUTER WINS!!!")
+                
+            }
+            else console.log("PLAYER WINS!!!!")
+            
+
+        }
+        gameSeries();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
