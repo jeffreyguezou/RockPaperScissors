@@ -30,8 +30,8 @@
     border: 5px solid red;
     height: 200px;
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
 }
 .gameScore{
     display: flex;
@@ -42,5 +42,14 @@
 .scoreTitle{
     width:100%;
     display: flex;
+    justify-content: center;
+}
+.score{
+    background-color: antiquewhite;
+    width:150px;
+    height:150px;
+    font-size: 100px;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }

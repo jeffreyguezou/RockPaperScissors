@@ -3,8 +3,18 @@
     const scissorButton = document.querySelector("#scissorButton");
     const resultContainer= document.querySelector("#resultContainer");
     const resultDiv= document.createElement('div');
+    const playerScore=document.querySelector("#playerScore");
+    const computerScore = document.querySelector("#computerSCore");
+    const playerResultDiv= document.createElement('div');
+    const computerResultDiv= document.createElement('div');
+    const playerResultContainer =  document.querySelector("#playerScore");
+    const computerResultContainer = document.querySelector("#computerScore");
     let computerWins=0;
     let playerWins=0;
+    computerResultDiv.textContent=`${computerWins}`;
+    playerResultDiv.textContent=`${playerWins}`;
+    playerResultContainer.append(playerResultDiv);
+    computerResultContainer.append(computerResultDiv);
     rockButton.addEventListener("click", ()=>{
         let userChoice='rock';
         playGame(userChoice)});
@@ -35,12 +45,21 @@
                 resultDiv.textContent=`Computer wins!! You chose ${userChoice} Computer chose ${computerChoice}`;
                 resultContainer.append(resultDiv);
                 computerWins++;
+                computerResultDiv.textContent=`${computerWins}`;
+                playerResultDiv.textContent=`${playerWins}`;
+                playerResultContainer.append(playerResultDiv);
+                computerResultContainer.append(computerResultDiv);
+
             }
             if(computerChoice=="scissors")
             {
                 resultDiv.textContent=`Player Wins!! You chose ${userChoice} Computer chose ${computerChoice}`;
                 resultContainer.append(resultDiv);
                 playerWins++;
+                computerResultDiv.textContent=`${computerWins}`;
+                playerResultDiv.textContent=`${playerWins}`;
+                playerResultContainer.append(playerResultDiv);
+                computerResultContainer.append(computerResultDiv);
             }
         }
         if(userChoice=="paper")
@@ -51,12 +70,20 @@
                 resultDiv.textContent=`Player Wins!! You chose ${userChoice} Computer chose ${computerChoice}`;
                 resultContainer.append(resultDiv);
                 playerWins++;
+                computerResultDiv.textContent=`${computerWins}`;
+                playerResultDiv.textContent=`${playerWins}`;
+                playerResultContainer.append(playerResultDiv);
+                computerResultContainer.append(computerResultDiv);
             }
             if(computerChoice=="scissors")
             {
                 resultDiv.textContent=`Computer wins!! You chose ${userChoice} Computer chose ${computerChoice}`;
                 resultContainer.append(resultDiv);
                 computerWins++;
+                computerResultDiv.textContent=`${computerWins}`;
+                playerResultDiv.textContent=`${playerWins}`;
+                playerResultContainer.append(playerResultDiv);
+                computerResultContainer.append(computerResultDiv);
             }
         }
         if(userChoice=="scissors")
@@ -67,12 +94,20 @@
                 resultDiv.textContent=`Computer wins!! You chose ${userChoice} Computer chose ${computerChoice}`;
                 resultContainer.append(resultDiv);
                 computerWins++;
+                computerResultDiv.textContent=`${computerWins}`;
+                playerResultDiv.textContent=`${playerWins}`;
+                playerResultContainer.append(playerResultDiv);
+                computerResultContainer.append(computerResultDiv);
             }
             if(computerChoice=="paper")
             {
                 resultDiv.textContent=`Player Wins!! You chose ${userChoice} Computer chose ${computerChoice}`;
                 resultContainer.append(resultDiv);
                 playerWins++;
+                computerResultDiv.textContent=`${computerWins}`;
+                playerResultDiv.textContent=`${playerWins}`;
+                playerResultContainer.append(playerResultDiv);
+                computerResultContainer.append(computerResultDiv);
             }
         }
         
