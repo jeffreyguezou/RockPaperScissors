@@ -53,3 +53,20 @@
     align-items: center;
     justify-content: center;
 }
+
+.mainResult{
+    color: red;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.newGame{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.newGameButton{
+    width:100px;
+    height:50px;
+}
