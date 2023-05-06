@@ -16,3 +16,31 @@
     align-items: center;
     justify-content: center;
 }
+.buttons{
+    width:150px;
+    height: 150px;
+    color: white;
+    background-color: black;
+    font-size: 30px;
+    cursor: pointer;
+}
+.playerScore, .computerScore{
+    width:50%;
+    background-color: pink;
+    border: 5px solid red;
+    height: 200px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.gameScore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:250px;
+}
+.scoreTitle{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}

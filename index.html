@@ -12,12 +12,25 @@
         <h1 class="gameName">Rock Paper Scissors</h1>
         <div class="instructions"><h3>Choose your weapon!!!</h3></div>
         <div class="gameButtons">
-            <button id="rockButton" class="rockButton" data-value="rock">Rock</button>
-            <button id="paperButton" class="paperButton" data-value="paper">Paper</button>
-            <button id="scissorButton" class="scissorButton" data-value="scissor">Scissor</button>
+            <button id="rockButton" class="rockButton buttons" data-value="rock">Rock</button>
+            <button id="paperButton" class="paperButton buttons" data-value="paper">Paper</button>
+            <button id="scissorButton" class="scissorButton buttons" data-value="scissor">Scissor</button>
+        </div>
+        <div id="gameScore"class="gameScore">
+            <div class="playerScore">
+                <div><h2 class="scoreTitle"><span>PLAYER</span></h2></div>
+            </div>
+            <div class="computerScore">
+                <div><h2 class="scoreTitle"><span>COMPUTER</span></h2></div>
+            </div>
+
+        </div>
+        <div id="resultContainer" class="resultContainer">
+
         </div>
         
     </div>
+    
 </body>
 </html>
 <script src="script.js">
