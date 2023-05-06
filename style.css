@@ -1,0 +1,18 @@
+
+.gameBody{
+    width:75%;
+    margin-left: 15%;
+    background-color: bisque;
+    padding: 5%;
+}
+.gameButtons{
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.gameName, .instructions{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
